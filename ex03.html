@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        document.addEventListener("DOMContentLoaded",()=>{
+            const h1=document.querySelector('h1');
+            const button=document.querySelector('#button');
+
+            button.addEventListener('click',()=>{
+                var a="";
+                a=Math.round(Math.random()*(45))+1;
+                h1.innerHTML+=`랜덤숫자 : ${a}<br>`;
+            });
+        });
+
+    </script>
+</head>
+<body>
+    <h1>랜덤 숫자</h1>
+    <p>1~45까지 랜덤 숫자</p>
+    <button id="button">버튼</button>
+</body>
+</html>
